@@ -1,0 +1,21 @@
+﻿<Window x:Class="Tema2_CaracteresLimitados.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tema2_CaracteresLimitados"
+        mc:Ignorable="d"
+        Title="Tema2-LimiteDeTexto" Height="450" Width="800" Icon="assets/documentediting_editdocuments_text_documentedi_2820.ico">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF8B00FF" Offset="0"/>
+                <GradientStop Color="#FFFB8900" Offset="1"/>
+                <GradientStop Color="#FFFFBB59" Offset="0.497"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <TextBox x:Name="mainTextTextBox" HorizontalAlignment="Left" Height="323" Margin="75,30,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="630" TextChanged="mainTextTextBox_TextChanged" AcceptsReturn="True"/>
+        <TextBlock x:Name="indicatorTextBlock" HorizontalAlignment="Left" Margin="642,358,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Source Code Pro Black" FontSize="15" Text="0 / 140" Foreground="#FF424242" FontWeight="Bold"/>
+
+    </Grid>
+</Window>
